@@ -2,24 +2,28 @@
 #include <time.h>
 #include <stdio.h>
 
-/* main prints the state of n */
+/**
+ * main - Prints the state of n
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	if(n > 0)
 	{
-	printf("is positive");
+	printf("%i is positive", n);
 	}
-	else if (n == 0)
+	else if(n == 0)
 	{
-	printf("is zero");
+	printf("%i is zero", n);
 	}
-	else if (n < 0)
+	else if(n < 0)
 	{
-	printf ("is negative");
+	printf ("%i is negative", n);
 	}
 	return (0);
 }
