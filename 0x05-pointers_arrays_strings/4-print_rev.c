@@ -12,6 +12,9 @@ while (*(s + count) != '\0')
 {
 count++;
 }
+
+count--;
+
 while (count >= 0)
 {
 putchar(*(s + count));
