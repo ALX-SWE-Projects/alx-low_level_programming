@@ -15,4 +15,5 @@ if (i % 2 == 0)
 putchar(str[i]);
 }
 }
+putchar('\n');
 }
